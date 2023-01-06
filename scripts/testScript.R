@@ -8,7 +8,6 @@ y
 rm(y)
 y <- a + b * x + rnorm(n, sd = sqrt(sig_sq))
 (avg_x <- mean(x))
-write(avg_x, 'avg_x.txt')
 write(avg_x, 'output/avg_x.txt')
 plot(x, y)
 abline(a, b, col = 'blue')
