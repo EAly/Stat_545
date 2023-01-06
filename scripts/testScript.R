@@ -1,8 +1,6 @@
-n <- 40
+n <- 100
 a <-  2
-b <- -3
-sig_sq <- 0/5
-rm(sig_sq)
+b <- 3
 sig_sq <- 0.5
 x <- runif(n)
 y <- a + b * x + rnorm(n, sd= sqrt(sig_sq))
@@ -13,6 +11,6 @@ y <- a + b * x + rnorm(n, sd = sqrt(sig_sq))
 write(avg_x, 'avg_x.txt')
 write(avg_x, 'output/avg_x.txt')
 plot(x, y)
-abline(a, b, col = 'purple')
+abline(a, b, col = 'blue')
 dev.print(pdf, 'output/toy_line_plot.pdf')
 
